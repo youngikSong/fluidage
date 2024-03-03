@@ -279,8 +279,7 @@ bool Foam::functionObjects::timeTransport::execute()
                 (
                     fvm::ddt(s_)
                   + fvm::div(phi, s_, divScheme)
-                 ==
-                    1 //fvModels.source(s_)
+                  - dimensionedScalar(1) //fvModels.source(s_)
                 );
                 //source will be 1 for fluid-age, so can use default code
 
@@ -311,8 +310,7 @@ bool Foam::functionObjects::timeTransport::execute()
             (
                 fvm::ddt(rho, s_)
               + fvm::div(phi, s_, divScheme)
-             ==
-                rho //fvModels.source(rho, s_)
+              - rho //fvModels.source(rho, s_)
             );
             //same here with upper side
 

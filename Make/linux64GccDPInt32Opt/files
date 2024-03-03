@@ -1,0 +1,5 @@
+SOURCE += timeTransport.C
+SOURCE += mfractionTransport.C
+SOURCE += avgageTransport.C
+
+LIB = $(FOAM_USER_LIBBIN)/libfluidage

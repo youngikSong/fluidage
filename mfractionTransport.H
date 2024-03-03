@@ -121,6 +121,8 @@ public:
             viscosity
         };
 
+        //- The scalar field
+        //volScalarField zeta_;
 
 private:
 

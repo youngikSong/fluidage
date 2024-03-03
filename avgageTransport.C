@@ -24,6 +24,8 @@ License
 \*---------------------------------------------------------------------------*/
 
 #include "avgageTransport.H"
+#include "mfractionTransport.H"
+
 #include "surfaceFields.H"
 #include "fvmDdt.H"
 #include "fvcDdt.H"

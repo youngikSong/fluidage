@@ -135,6 +135,9 @@ private:
         //- Name of density field (optional)
         word rhoName_;
 
+        //- Name of mass fraction field (optional)
+        word zetaName_;
+
         //- diffusivity type names
         static const NamedEnum<diffusivityType, 3> diffusivityTypeNames_;
 
