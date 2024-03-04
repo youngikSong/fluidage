@@ -319,7 +319,7 @@ bool Foam::functionObjects::avgageTransport::execute()
                 fvm::ddt(rho, cphi_)
               + fvm::div(phi, cphi_, divScheme)
              ==
-                zeta
+                rho*zeta
             );
             //same here with upper side
 
